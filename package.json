@@ -1,0 +1,18 @@
+{
+  "name": "hiver",
+  "version": "1.0.0",
+  "description": "hiver landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "himanish58",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-less": "^3.3.2",
+    "gulp-uglify": "^3.0.0"
+  }
+}

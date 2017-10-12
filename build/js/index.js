@@ -1,0 +1,1 @@
+function fun(){alert("Button Clicked")}var btn=document.getElementsByTagName("button");btn[0].addEventListener("click",fun);
