@@ -1,4 +1,36 @@
-@primary-color : green;
-body{
+@primary-color: #40ad7a;
+@secondary-color: #efefef;
+
+body {
+  margin: 0;
+}
+
+nav {
   background-color: @primary-color;
+  height: 25vh;
+  width: 100%;
+  position: static;
+  line-height: 2rem;
+}
+
+.quote{
+  background-color: @secondary-color;
+  height: 25vh;
+  width: 100%;
+  position: static;
+  line-height: 2rem;
+}
+
+#quote-pic {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  position: relative;
+  top: 30px;
+  left: 10px;
+}
+
+.quote-text {
+  display: inline-block;
+  position: relative;
 }
