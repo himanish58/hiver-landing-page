@@ -7,7 +7,7 @@ body {
 
 nav {
   background-color: @primary-color;
-  height: 25vh;
+  min-height: 25vh;
   width: 100%;
   position: static;
   line-height: 2rem;
@@ -15,10 +15,11 @@ nav {
 
 .quote{
   background-color: @secondary-color;
-  height: 25vh;
+  min-height: 25vh;
   width: 100%;
   position: static;
   line-height: 2rem;
+  display: inline-block;
 }
 
 #quote-pic {
@@ -28,9 +29,85 @@ nav {
   position: relative;
   top: 30px;
   left: 10px;
+  display: inline-block;
 }
 
 .quote-text {
   display: inline-block;
-  position: relative;
+  position: absolute;
+  top: 30px;
+  left: 150px;
+  p {
+    font-size: 0.8rem;
+    #right-quote {
+      display: inline-block;
+      position: static;
+      float: right;
+      font-size: 1rem;
+    }
+  }
+}
+
+form {
+  position: absolute;
+  background-color: #ffffff;
+  padding: 10px;
+  height: auto;
+  width: 25vw;
+  top: 10vh;
+  right: 5vw;
+  border-radius: 5px;
+  button {
+    background-color: #f25010;
+    margin-top: 10px;
+  }
+}
+
+.features{
+  text-align: center;
+  line-height: 1.5rem;
+  margin: 50px;
+  display: inline-block;
+  .card {
+    border: none;
+    h3 {
+      text-transform: uppercase;
+    }
+    img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.logos {
+  background-color: @secondary-color;
+  min-height: 15vh;
+  min-width: 100%;
+  img {
+    height: 100px;
+    width: 200px;
+  }
+}
+
+footer {
+  padding: 0.5rem;
+  a {
+    text-decoration: none;
+    color: #000;
+    &:hover {
+      text-decoration: none;
+      color: #000;
+    }
+    // p{
+    //   display: inline-block;
+    //   span{
+    //     float: right;
+    //     text-align: right;
+    //   }
+    // }
+  }
 }
