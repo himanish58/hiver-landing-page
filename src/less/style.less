@@ -6,7 +6,7 @@
 @button-color: #f25010;
 
 
-
+// General
 html, body {
   // height: 100%;
   // width: 100%;
@@ -15,6 +15,7 @@ html, body {
   overflow-x: hidden;
 }
 
+// Navigation
 nav {
   background-color: @primary-color;
   min-height: 150px;
@@ -30,9 +31,10 @@ nav {
   }
 }
 
+// Quote
 .quote{
   background-color: @secondary-color;
-  min-height: 175px;
+  min-height: 185px;
   width: 100%;
   position: static;
   line-height: 2rem;
@@ -69,23 +71,33 @@ nav {
   }
 }
 
-form {
+// Form
+#form {
   position: absolute;
-  background-color: @primary-text-color;
-  padding: 20px 15px;
-  height: auto;
-  width: 300px;
+
   top: 50px;
   right: 50px;
-  border-radius: 5px;
-  color: @secondary-text-color;
-  button {
-    background-color: @button-color;
-    margin-top: 10px;
-    color: @primary-text-color;
+  form {
+    // position: absolute;
+    background-color: @primary-text-color;
+    padding: 20px 15px;
+    height: auto;
+    width: 300px;
+    border-radius: 5px;
+    color: @secondary-text-color;
+    button {
+      background-color: @button-color;
+      margin-top: 10px;
+      color: @primary-text-color;
+    }
+  }
+  p {
+    font-size: 0.7rem;
+    margin-top: 5px;
   }
 }
 
+// Features
 .features{
   text-align: center;
   line-height: 1.5rem;
@@ -110,18 +122,20 @@ form {
   }
 }
 
+// Logos
 .logos {
   background-color: @secondary-color;
-  min-height: 100%;
+  min-height: 100px;
   min-width: 100%;
   padding: 20px 0px 20px 50px;
   img {
-    height: 100px;
+    height: 100%;
     width: 100px;
     padding: 10px;
   }
 }
 
+// Footer
 footer {
   padding: 0.5rem;
   div{
@@ -147,8 +161,39 @@ footer {
 
 }
 
+// Media Queries for Mobile Devices
 @media screen and (max-width: 768px) {
-  form {
-    display: none;
+  #form {
+    position: static;
+    p {
+      padding-left: 10px;
+      margin-top: 0;
+    }
   }
+
+  nav {
+    padding: 10px;
+    h5{
+      padding-right: 0;
+    }
+  }
+
+  .quote {
+    padding: 10px;
+    min-height: 300px;
+  }
+
+  footer {
+    div {
+      display: block;
+    }
+    .footer-text {
+        margin: 0;
+      }
+    .footer-right {
+      margin: 0;
+      float: none;
+    }
+  }
+
 }
